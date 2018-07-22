@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      fetch('utils.gc.wasm')
+        .then(response => response.arrayBuffer())
+        .then(result => WebAssembly.instantiate(result))
+        .then(wasmModule => {
+          const result = wasmModule.instance.exports.add_one(2);
+          const text = document.createTextNode(result);
+          document.body.appendChild(text);
+        });
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      WebAssembly.instantiateStreaming(fetch('utils.gc.wasm'))
+        .then(wasmModule => {
+          const result = wasmModule.instance.exports.add_one(3);
+          const text = document.createTextNode(result);
+          document.body.appendChild(text);
+        });
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "lesson-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-debug": "cargo +nightly build --target wasm32-unknown-unknown && wasm-bindgen target/wasm32-unknown-unknown/debug/app.wasm --out-dir ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.4",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
