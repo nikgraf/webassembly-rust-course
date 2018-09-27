@@ -1,0 +1,332 @@
+Aug 25 20:47:53.451 ERRO Compilation of your program failed. stderr:
+
+   Compiling unicode-xid v0.1.0
+   Compiling serde v1.0.66
+   Compiling wasm-bindgen-shared v0.2.11
+   Compiling itoa v0.4.1
+   Compiling dtoa v0.4.2
+   Compiling proc-macro2 v0.4.6
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:284:13
+    |
+284 |     Nightly(proc_macro::SourceFile, FileName),
+    |             ^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:289:20
+    |
+289 |     fn nightly(sf: proc_macro::SourceFile) -> Self {
+    |                    ^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:290:45
+    |
+290 |         let filename = stable::file_name(sf.path().to_string());
+    |                                             ^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0599]: no method named `to_string` found for type `std::path::PathBuf` in the current scope
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:290:52
+    |
+290 |         let filename = stable::file_name(sf.path().to_string());
+    |                                                    ^^^^^^^^^
+    |
+    = note: the method `to_string` exists but the following trait bounds were not satisfied:
+            `std::path::PathBuf : std::string::ToString`
+            `std::path::Path : std::string::ToString`
+    = help: did you mean `to_str`?
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:304:44
+    |
+304 |             SourceFile::Nightly(a, _) => a.is_real(),
+    |                                            ^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:347:27
+    |
+347 |             Span::Nightly(proc_macro::Span::def_site())
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:355:69
+    |
+355 |             (Span::Nightly(a), Span::Nightly(b)) => Span::Nightly(a.resolved_at(b)),
+    |                                                                     ^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:363:69
+    |
+363 |             (Span::Nightly(a), Span::Nightly(b)) => Span::Nightly(a.located_at(b)),
+    |                                                                     ^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:424:55
+    |
+424 |             (Span::Nightly(a), Span::Nightly(b)) => a.eq(b),
+    |                                                       ^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_raw_ident' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:475:48
+    |
+475 |             Span::Nightly(s) => Ident::Nightly(proc_macro::Ident::new_raw(string, s)),
+    |                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_raw_ident)] to the crate attributes to enable
+
+error: aborting due to 10 previous errors
+
+Some errors occurred: E0599, E0658.
+For more information about an error, try `rustc --explain E0599`.
+error: Could not compile `proc-macro2`.
+warning: build failed, waiting for other jobs to finish...
+error: build failed
+
+Aug 25 20:50:25.016 ERRO Compilation of your program failed. stderr:
+
+   Compiling proc-macro2 v0.4.6
+   Compiling serde v1.0.66
+   Compiling wasm-bindgen-shared v0.2.11
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:284:13
+    |
+284 |     Nightly(proc_macro::SourceFile, FileName),
+    |             ^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:289:20
+    |
+289 |     fn nightly(sf: proc_macro::SourceFile) -> Self {
+    |                    ^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:290:45
+    |
+290 |         let filename = stable::file_name(sf.path().to_string());
+    |                                             ^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0599]: no method named `to_string` found for type `std::path::PathBuf` in the current scope
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:290:52
+    |
+290 |         let filename = stable::file_name(sf.path().to_string());
+    |                                                    ^^^^^^^^^
+    |
+    = note: the method `to_string` exists but the following trait bounds were not satisfied:
+            `std::path::PathBuf : std::string::ToString`
+            `std::path::Path : std::string::ToString`
+    = help: did you mean `to_str`?
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:304:44
+    |
+304 |             SourceFile::Nightly(a, _) => a.is_real(),
+    |                                            ^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:347:27
+    |
+347 |             Span::Nightly(proc_macro::Span::def_site())
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:355:69
+    |
+355 |             (Span::Nightly(a), Span::Nightly(b)) => Span::Nightly(a.resolved_at(b)),
+    |                                                                     ^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:363:69
+    |
+363 |             (Span::Nightly(a), Span::Nightly(b)) => Span::Nightly(a.located_at(b)),
+    |                                                                     ^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:424:55
+    |
+424 |             (Span::Nightly(a), Span::Nightly(b)) => a.eq(b),
+    |                                                       ^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_raw_ident' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:475:48
+    |
+475 |             Span::Nightly(s) => Ident::Nightly(proc_macro::Ident::new_raw(string, s)),
+    |                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_raw_ident)] to the crate attributes to enable
+
+error: aborting due to 10 previous errors
+
+Some errors occurred: E0599, E0658.
+For more information about an error, try `rustc --explain E0599`.
+error: Could not compile `proc-macro2`.
+warning: build failed, waiting for other jobs to finish...
+error: build failed
+
+Aug 25 20:50:53.294 ERRO Compilation of your program failed. stderr:
+
+   Compiling proc-macro2 v0.4.6
+   Compiling serde_json v1.0.20
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:284:13
+    |
+284 |     Nightly(proc_macro::SourceFile, FileName),
+    |             ^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:289:20
+    |
+289 |     fn nightly(sf: proc_macro::SourceFile) -> Self {
+    |                    ^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:290:45
+    |
+290 |         let filename = stable::file_name(sf.path().to_string());
+    |                                             ^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0599]: no method named `to_string` found for type `std::path::PathBuf` in the current scope
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:290:52
+    |
+290 |         let filename = stable::file_name(sf.path().to_string());
+    |                                                    ^^^^^^^^^
+    |
+    = note: the method `to_string` exists but the following trait bounds were not satisfied:
+            `std::path::PathBuf : std::string::ToString`
+            `std::path::Path : std::string::ToString`
+    = help: did you mean `to_str`?
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:304:44
+    |
+304 |             SourceFile::Nightly(a, _) => a.is_real(),
+    |                                            ^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:347:27
+    |
+347 |             Span::Nightly(proc_macro::Span::def_site())
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:355:69
+    |
+355 |             (Span::Nightly(a), Span::Nightly(b)) => Span::Nightly(a.resolved_at(b)),
+    |                                                                     ^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:363:69
+    |
+363 |             (Span::Nightly(a), Span::Nightly(b)) => Span::Nightly(a.located_at(b)),
+    |                                                                     ^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_span' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:424:55
+    |
+424 |             (Span::Nightly(a), Span::Nightly(b)) => a.eq(b),
+    |                                                       ^^
+    |
+    = help: add #![feature(proc_macro_span)] to the crate attributes to enable
+
+error[E0658]: use of unstable library feature 'proc_macro_raw_ident' (see issue #38356)
+   --> /Users/nikgraf/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-0.4.6/src/unstable.rs:475:48
+    |
+475 |             Span::Nightly(s) => Ident::Nightly(proc_macro::Ident::new_raw(string, s)),
+    |                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = help: add #![feature(proc_macro_raw_ident)] to the crate attributes to enable
+
+error: aborting due to 10 previous errors
+
+Some errors occurred: E0599, E0658.
+For more information about an error, try `rustc --explain E0599`.
+error: Could not compile `proc-macro2`.
+warning: build failed, waiting for other jobs to finish...
+error: build failed
+
+Aug 25 21:00:04.137 ERRO Installing wasm-bindgen failed. stderr:
+
+    Updating registry `https://github.com/rust-lang/crates.io-index`
+error: failed to fetch `https://github.com/rust-lang/crates.io-index`
+
+Caused by:
+  unexpected return value from ssl handshake -9806; class=Ssl (16)
+
+Aug 25 21:31:27.010 ERRO Installing wasm-bindgen failed. stderr:
+
+    Updating registry `https://github.com/rust-lang/crates.io-index`
+error: failed to fetch `https://github.com/rust-lang/crates.io-index`
+
+Caused by:
+  unexpected return value from ssl handshake -9806; class=Ssl (16)
+
+Sep 24 20:00:03.638 ERRO wasm-bindgen failed to execute properly. stderr:
+
+error: failed to extract wasm-bindgen custom sections
+	caused by: 
+
+it looks like the Rust project used to create this wasm file was linked against
+a different version of wasm-bindgen than this binary:
+
+  rust wasm file: 0.2.17
+     this binary: 0.2.22
+
+Currently the bindgen format is unstable enough that these two version must
+exactly match, so it's required that these two version are kept in sync by
+either updating the wasm-bindgen dependency or this binary. You should be able
+to update the wasm-bindgen dependency with:
+
+    cargo update -p wasm-bindgen
+
+or you can update the binary with
+
+    cargo install -f wasm-bindgen-cli
+
+if this warning fails to go away though and you're not sure what to do feel free
+to open an issue at https://github.com/rustwasm/wasm-bindgen/issues!
+
+

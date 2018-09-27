@@ -1,0 +1,16 @@
+{
+  "name": "utils",
+  "collaborators": [
+    "Nik Graf <nik@nikgraf.com>"
+  ],
+  "description": null,
+  "version": "0.1.0",
+  "license": null,
+  "repository": null,
+  "files": [
+    "utils_bg.wasm",
+    "utils.d.ts"
+  ],
+  "main": "utils.js",
+  "types": "utils.d.ts"
+}
