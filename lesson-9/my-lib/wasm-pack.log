@@ -1,0 +1,20 @@
+Aug 25 13:36:36.995 ERRO Ensure that you have "[1m[2mwasm-bindgen[0m" as a dependency in your Cargo.toml file:
+[dependencies]
+wasm-bindgen = "0.2"
+Aug 25 16:27:07.767 ERRO Login to registry https://registry.npmjs.org/ failed. stderr:
+
+[37;40mnpm[0m [0m[31;40mERR![0m [0m[35mcode[0m EAUTHIP
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Unable to authenticate, need: Basic
+[0m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m A complete log of this run can be found in:
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     /Users/nikgraf/.npm/_logs/2018-08-25T14_27_07_740Z-debug.log
+[0m
+Aug 25 16:28:56.489 ERRO Publishing to npm failed. stderr:
+
+npm ERR! publish Failed PUT 403
+npm ERR! code E403
+npm ERR! You do not have permission to publish "my-lib". Are you logged in as the correct user? : my-lib
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/nikgraf/.npm/_logs/2018-08-25T14_28_56_469Z-debug.log
+

@@ -1,0 +1,13 @@
+{
+  "name": "my-lib-test-1",
+  "collaborators": [
+    "Nik Graf <nik@nikgraf.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "my_lib_bg.wasm",
+    "my_lib.d.ts"
+  ],
+  "main": "my_lib.js",
+  "types": "my_lib.d.ts"
+}
