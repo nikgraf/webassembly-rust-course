@@ -1,0 +1,6 @@
+[package]
+name = "utils"
+version = "0.1.0"
+authors = ["Nik Graf <nik@nikgraf.com>"]
+
+[dependencies]
